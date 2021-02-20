@@ -6,7 +6,7 @@ def multiples_list(number,multiples):
   OUTPUT
   Regresa una lista con los múltiplos del primer argumento porporcionado.
   """
-  if type(number) != int or type(multiples) != int:
+  if not(isinstance(number,int) and isinstance(multiples,int)):
     return None
   if number<0 or multiples <0:
     return None
