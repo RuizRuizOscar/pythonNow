@@ -5,7 +5,7 @@ def largo_numero(number):
   """
   if type(number) != int:
     return None
-  if number < 0 :
+  if number < 0:
     return None
   count = 0
   for i in str(number):
