@@ -1,4 +1,4 @@
-def make_box(number):
+def makeBox2(number):
   """
   INPUT
   Esta función recibe un número entero positivo mayor a 1
@@ -14,10 +14,9 @@ def make_box(number):
   if number == 1:
     box_list.append("#")
   else:
-    base, lado = "", ""
-    base = base.zfill(number).replace("0", "#")
+    base = "#"*number
     box_list.append(base)
-    lado = "#" + lado.zfill(number-2).replace("0", " ") + "#"
+    lado = "#" + " "*(number-2) + "#"
     i=0
     while i < number-2:
       box_list.append(lado)
