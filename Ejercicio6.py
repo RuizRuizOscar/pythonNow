@@ -1,4 +1,11 @@
 def make_box(number):
+  """
+  INPUT
+  Esta función recibe un número entero positivo mayor a 1
+  OUTPUT
+  Si recibe algo distinto a un número entero positivo mayor a 1, retorna None
+  Si recibe un "valor"=número entero positivo mayor a 1, imprime una caja con base y lado de longitud "valor"
+  """
   if not isinstance(number,int):
     return None
   if number < 1:
