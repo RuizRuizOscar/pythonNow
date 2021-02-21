@@ -12,7 +12,7 @@ def pluralize(lista_original):
       return None, "hay elementos en la lista que no son strings"
   lista_plural = []
   for i in lista_original:
-    if lista_plural.count(i) == 0:
+    if lista_plural.count(i) == 0 and lista_plural.count(i+"s") == 0:
       lista_plural.append(i)
     elif lista_plural.count(i) > 0:
       lista_plural[lista_plural.index(i)] += "s"
